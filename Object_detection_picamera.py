@@ -1,3 +1,29 @@
+######## PiCamera Object Detection Using Tensorflow Classifier for VISION-Bilgegoz #########
+#
+# Author: Ahmet Akif Kaya
+# Date: 2/4/19
+# Description:
+# This program uses a TensorFlow classifier to perform object detection.
+# For detecting the objects in the frame of the camera to be said vocally to the blind user.
+# It loads the classifier uses it to perform object detection on a PiCamera feed.
+# It draws boxes and scores around the objects of interest in each frame from
+# the PiCamera. It also can be used with a USB Camera.
+
+## Some of the code is copied from EjdeElectronics Tensorflow on Raspiberry Pi Library at
+## https://github.com/EdjeElectronics/TensorFlow-Object-Detection-on-the-Raspberry-Pi
+
+## and some of the code is copied from Google's example at
+## https://github.com/tensorflow/models/blob/master/research/object_detection/object_detection_tutorial.ipynb
+
+## and some is copied from Dat Tran's example at
+## https://github.com/datitran/object_detector_app/blob/master/object_detection_app.py
+
+# This code is specifically written for the Vision-Bilgegoz project by Ahmet Akif Kaya
+# and all rights of this program is owned by Ahmet Akif Kaya under MIT open source license. 
+# You are automatically accepting the terms of the MIT license by using this code in any way.
+# The terms and conditions about this project's MIT license can be found in the file named
+# "LICENSE" in the root directory of this repository.
+
 import os
 import cv2
 import numpy as np
